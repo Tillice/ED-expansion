@@ -1,0 +1,230 @@
+
+
+---forge strings---
+stringid add needle_rifle
+stringid add h2a_battle_rifle
+edit 1221
+set english needle_rifle "needle rifle"
+set english h2a_battle_rifle "h2a battle rifle"
+exitto tags.dat
+--- forge strings end---
+
+
+---forge menu---
+edit 54e9 
+addto sandboxweapons
+edit sandboxweapons[*]
+setfield object 579c
+setfield name needle_rifle 
+exit
+addto sandboxweapons
+edit sandboxweapons[*]
+setfield object 5726
+setfield name h2a_battle_rifle
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+
+
+---pelican---
+duplicate 0
+import 5828 vehicles\pelican\pelican.vehi
+import 2849 vehicles\pelican\pelican.jmad
+import 1a44 vehicles\pelican\pelican_pod_left.vehi
+import 284b vehicles\pelican\pelican_pod_right.vehi
+import 284a vehicles\pelican\pelican.phmo
+
+
+dep add 5828 2836
+dep add 5828 2835
+dep add 5828 2837
+dep add 5828 2838
+dep add 5828 2839
+dep add 5828 2803
+dep add 5828 2b09
+dep add 5828 2834
+dep add 5828 2849
+dep add 5828 1a44
+dep add 5828 284b
+dep add 5828 284a
+dep add 5828 2848
+dep add 5828 2847
+
+
+
+--- forge strings ---
+edit 1221
+set english pelican pelican
+exit
+--- forge strings end ---
+
+
+
+---vehi---
+edit 5828
+edit seats[0]
+edit cameratracks[0]
+setfield track 5698
+setfield enterseatstring device_pelican
+exit
+edit seats[12]
+edit cameratracks[0]
+setfield track 5698
+exit
+exit
+removefrom attachments
+removefrom attachments
+edit functions[0]
+setfield importname hover
+setfield turnoffwith driver_seat_power
+edit functions[1]
+setfield importname thrust
+setfield turnoffwith driver_seat_power
+savechanges
+exitto tags.dat
+--- vehi end--- 
+
+---mode---
+edit 2847
+edit nodes[7]
+setfield defaultscale 0
+exit
+edit nodes[8]
+setfield defaultscale 0
+savechanges
+exitto tags.dat
+---mode end---
+
+---scnrs
+edit 54e9
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+edit 5247
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+edit 4f14
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+edit 4a08
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+edit 3f83
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+edit 54e9
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+edit 3488
+addto sandboxvehicles
+edit sandboxvehicles[*]
+setfield object 5828
+setfield name pelican
+setfield maxallowed 255
+savechanges
+exitto tags.dat
+--- scnrs end---
+---pelican end--- 
+
+--- needle rifle jmad---
+edit 5822
+edit animations[8]
+addto frameevents
+edit frameevents[*]
+setfield frame 4
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue secondarykeyframe
+setfield frame 14
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue transitiona
+setfield frame 23
+exit
+exit
+
+edit animations[9]
+addto frameevents
+edit frameevents[*]
+setfield frame 4
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue secondarykeyframe
+setfield frame 14
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue transitiona
+setfield frame 23
+savechanges
+exitto tags.dat
+---elite---
+edit 5823
+edit animations[8]
+addto frameevents
+edit frameevents[*]
+setfield frame 4
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue secondarykeyframe
+setfield frame 14
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue transitiona
+setfield frame 23
+exit
+exit
+
+edit animations[9]
+addto frameevents
+edit frameevents[*]
+setfield frame 4
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue secondarykeyframe
+setfield frame 14
+exit
+addto frameevents
+edit frameevents[*]
+setfield typevalue transitiona
+setfield frame 23
+savechanges
+exitto tags.dat
+--- need
+pause<null
+echo all done!
