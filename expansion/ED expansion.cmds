@@ -65,6 +65,7 @@ edit 5828
 edit seats[0]
 edit cameratracks[0]
 setfield track 5698
+exit
 setfield enterseatstring device_pelican
 exit
 edit seats[12]
