@@ -1,20 +1,20 @@
 ---open in MS30 tags.dat---
 ---NOTE FRESH 0.5.0.2 TAGS REQUIRED---
 matchtags ms30.csv "C:\Halo MS23\maps"
-convert 1253  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1252  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1249  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 124A  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 124C  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 124F  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1250  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1225  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1228  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 125C  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 123B  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 123D  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 123E  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 123F  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1240  ms30.csv ms30output.csv "C:\Halo MS23\maps"
-convert 1241  ms30.csv ms30output.csv "C:\Halo MS23\maps"
+convert 1253  ms30.csv ms30output.csv (drag ED folder here)
+convert 1252  ms30output.csv ms30output.csv (drag ED folder here)
+convert 1249  ms30output.csv ms30output.csv (drag ED folder here)
+convert 124A  ms30output.csv ms30output.csv (drag ED folder here)
+convert 124C  ms30output.csv ms30output.csv (drag ED folder here)
+convert 124F  ms30output.csv ms30output.csv (drag ED folder here)
+convert 1250  ms30output.csv ms30output.csv (drag ED folder here)
+convert 1225  ms30output.csv ms30output.csv (drag ED folder here)
+convert 1228  ms30output.csv ms30output.csv (drag ED folder here)
+convert 125C  ms30output.csv ms30output.csv (drag ED folder here)
+convert 123B  ms30output.csv ms30output.csv (drag ED folder here)
+convert 123D  ms30output.csv ms30output.csv (drag ED folder here)
+convert 123E  ms30output.csv ms30output.csv (drag ED folder here)
+convert 123F  ms30output.csv ms30output.csv (drag ED folder here)
+convert 1240  ms30output.csv ms30output.csv (drag ED folder here)
+convert 1241  ms30output.csv ms30output.csv (drag ED folder here)
 
