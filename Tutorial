@@ -1,4 +1,4 @@
-*make sure you have stock 0.5.0.2 tags*
+#  make sure you have stock 0.5.0.2 tags
 First off you need to convert these tags from MS30 to MS23
 first you need to open tagtool with the MS30 tags.dat
 then write these commands 
