@@ -225,6 +225,6 @@ setfield type transitiona
 setfield frame 23
 savechanges
 exitto tags.dat
---- need
+dumplog expansion
 pause<null
 echo all done!
