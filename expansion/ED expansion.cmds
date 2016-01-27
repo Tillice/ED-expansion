@@ -164,12 +164,12 @@ setfield frame 4
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue secondarykeyframe
+setfield type secondarykeyframe
 setfield frame 14
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue transitiona
+setfield type transitiona
 setfield frame 23
 exit
 exit
@@ -181,12 +181,12 @@ setfield frame 4
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue secondarykeyframe
+setfield type secondarykeyframe
 setfield frame 14
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue transitiona
+setfield type transitiona
 setfield frame 23
 savechanges
 exitto tags.dat
@@ -199,12 +199,12 @@ setfield frame 4
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue secondarykeyframe
+setfield type secondarykeyframe
 setfield frame 14
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue transitiona
+setfield type transitiona
 setfield frame 23
 exit
 exit
@@ -216,12 +216,12 @@ setfield frame 4
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue secondarykeyframe
+setfield type secondarykeyframe
 setfield frame 14
 exit
 addto frameevents
 edit frameevents[*]
-setfield typevalue transitiona
+setfield type transitiona
 setfield frame 23
 savechanges
 exitto tags.dat
