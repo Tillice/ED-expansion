@@ -156,6 +156,51 @@ exitto tags.dat
 --- scnrs end---
 ---pelican end--- 
 
+--- needle rifle chad---
+duplicate 20E0
+import 5829 weapons\needle_rifle\needle_rifle.chad
+dep add 579C 5829
+--- needle rifle chdt---
+duplicate 1DBA
+import 582A weapons\needle_rifle\needle_rifle.chdt
+dep add 579C 582A
+--- needle rifle weap---
+edit 579C
+setfield HudInterface 582A
+savechanges
+exitto tags.dat
+--- needle rifle bitm---
+importbitmap textures\carbine_scope.dds
+importbitmap textures\nr_focus.dds
+importbitmap textures\nr_schematic.dds
+importbitmap textures\nr_glyphs_bottom.dds
+importbitmap textures\nr_glyphs_left.dds
+importbitmap textures\nr_glyphs_right.dds
+importbitmap textures\nr_glyphs_top.dds
+dep add 579C 582B
+dep add 579C 582C
+dep add 579C 582D
+dep add 579C 582E
+dep add 579C 582F
+dep add 597C 5830
+dep add 597C 5831
+---needle rifle hud---
+edit 582A
+edit HudWidgets[2]
+setfield BitmapWidgets[4].AnimationData[0].Animation2 5829
+exit
+edit HudWidgets[3]
+setfield BitmapWidgets[0].Bitmap 582B
+setfield BitmapWidgets[1].Bitmap 582D
+setfield BitmapWidgets[2].Bitmap 582F
+setfield BitmapWidgets[3].Bitmap 5830
+setfield BitmapWidgets[4].Bitmap 5831
+setfield BitmapWidgets[5].Bitmap 582E
+exit
+edit HudWidgets[7]
+setfield BitmapWidgets[0].Bitmap 582C
+savechanges
+exitto tags.dat
 --- needle rifle jmad---
 edit 5822
 edit animations[8]
