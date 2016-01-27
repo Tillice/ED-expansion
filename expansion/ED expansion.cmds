@@ -199,6 +199,17 @@ setfield BitmapWidgets[5].Bitmap 582E
 exit
 edit HudWidgets[7]
 setfield BitmapWidgets[0].Bitmap 582C
+exit
+edit HudWidgets[7]
+setfield BitmapWidgets[0].Bitmap 582C
+edit HudWidgets[5]
+exit
+setfield BitmapWidgets[0].Bitmap 582D
+edit HudWidgets[6]
+exit
+setfield BitmapWidgets[0].Bitmap 582D
+savechanges
+exitto tags.dat
 savechanges
 exitto tags.dat
 --- needle rifle jmad---
