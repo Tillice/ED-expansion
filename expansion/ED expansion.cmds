@@ -156,6 +156,9 @@ exitto tags.dat
 --- scnrs end---
 ---pelican end--- 
 
+
+
+---needle rifle---
 --- needle rifle chad---
 duplicate 20E0
 import 5829 weapons\needle_rifle\needle_rifle.chad
@@ -281,6 +284,20 @@ edit frameevents[*]
 setfield type transitiona
 setfield frame 23
 savechanges
+exitto tags.dat
+---jmads end---
+--- needle rifle end ---
+--- hud strings ---
+stringid add nr_picked_up
+stringid add pelican_flip
+stringid add pelican_enter_driver
+stringid add cf_picked_up
+edit 12c2
+set english nr_picked_up "Picked up a Needle Rifle"
+set english pelican_flip "Hold <_button_action_reload/> to flip Pelican (you had a really bad pilot, didnt you?)"
+set english pelican_enter_driver "Hold <_button_action_reload/> to pilot Pelican"
+set english cf_picked_up "Picked up a Confetti Gun"
+--- hud strings end ---
 exitto tags.dat
 dumplog expansion
 pause<null
