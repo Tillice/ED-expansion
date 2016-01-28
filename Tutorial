@@ -1,0 +1,7 @@
+make sure you have stock 0.5.0.2 tagss
+First off you need to convert these tags from MS30 to MS23
+first you need to open tagtool with the MS30 tags.dat
+then write these commands 
+convert 1253  ms30.csv ms30output.csv (drag ED folder here)
+convert 1252  ms30output.csv ms30output.csv (drag ED folder here)
+And now, go to your eldewrito folder and extract the expansion folder& expansion bat into the maps folder and then simply run the bat
