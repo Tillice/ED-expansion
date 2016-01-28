@@ -1,5 +1,5 @@
 
-
+--- strings--- 
 ---forge strings---
 stringid add needle_rifle
 stringid add h2a_battle_rifle
@@ -8,6 +8,18 @@ set english needle_rifle "needle rifle"
 set english h2a_battle_rifle "h2a battle rifle"
 exitto tags.dat
 --- forge strings end---
+--- hud strings ---
+stringid add nr_picked_up
+stringid add pelican_flip
+stringid add pelican_enter_driver
+stringid add cf_picked_up
+edit 12c2
+set english nr_picked_up "Picked up a Needle Rifle"
+set english pelican_flip "Hold <_button_action_reload/> to flip Pelican (you had a really bad pilot, didnt you?)"
+set english pelican_enter_driver "Hold <_button_action_reload/> to pilot Pelican"
+set english cf_picked_up "Picked up a Confetti Gun"
+--- hud strings end ---
+--- strings ---
 
 
 ---forge menu---
@@ -66,7 +78,7 @@ edit seats[0]
 edit cameratracks[0]
 setfield track 5698
 exit
-setfield enterseatstring device_pelican
+setfield enterseatstring pelican_enter_driver
 exit
 edit seats[12]
 edit cameratracks[0]
@@ -163,6 +175,7 @@ exitto tags.dat
 duplicate 20E0
 import 5829 weapons\needle_rifle\needle_rifle.chad
 dep add 579C 5829
+setfield pickedupmessage nr_picked_up
 --- needle rifle chdt---
 duplicate 1DBA
 import 582A weapons\needle_rifle\needle_rifle.chdt
@@ -287,17 +300,7 @@ savechanges
 exitto tags.dat
 ---jmads end---
 --- needle rifle end ---
---- hud strings ---
-stringid add nr_picked_up
-stringid add pelican_flip
-stringid add pelican_enter_driver
-stringid add cf_picked_up
-edit 12c2
-set english nr_picked_up "Picked up a Needle Rifle"
-set english pelican_flip "Hold <_button_action_reload/> to flip Pelican (you had a really bad pilot, didnt you?)"
-set english pelican_enter_driver "Hold <_button_action_reload/> to pilot Pelican"
-set english cf_picked_up "Picked up a Confetti Gun"
---- hud strings end ---
+
 exitto tags.dat
 dumplog expansion
 pause<null
