@@ -15,8 +15,8 @@ stringid add pelican_enter_driver
 stringid add cf_picked_up
 edit 12c2
 set english nr_picked_up "Picked up a Needle Rifle"
-set english pelican_flip "Hold ? to flip Pelican (you had a really bad pilot, didnt you?)"
-set english pelican_enter_driver "Hold ? to pilot Pelican"
+set english pelican_flip "Hold î‘Ÿ to flip Pelican (you had a really bad pilot, didnt you?)"
+set english pelican_enter_driver "Hold î‘Ÿ to pilot Pelican"
 set english cf_picked_up "Picked up a Confetti Gun"
 --- hud strings end ---
 --- strings ---
