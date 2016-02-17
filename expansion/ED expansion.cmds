@@ -1,29 +1,57 @@
-
---- strings--- 
----forge strings---
+echo		---weapons---
+echo		---strings--- 
+echo		---forge_strings---
 stringid add needle_rifle
-stringid add h2a_battle_rifle
+stringid add battle_rifle_v7
+---stringid add excavator_v1
+---stringid add excavator_v2
+---stringid add magnum_v1
+---stringid add plasma_pistol_v1
+---stringid add plasma_pistol_v2
+---stringid add assault_rifle_v1
+---stringid add assault_rifle_v4
+---stringid add smg_v3_type_1
+---stringid add smg_v5
+---stringid add plasma_rifle_v1
+---stringid add plasma_rifle_v2
+---stringid add plasma_rifle_v3
+---stringid add plasma_rifle_v4
+---stringid add plasma_rifle_v5
 edit 1221
 set english needle_rifle "needle rifle"
-set english h2a_battle_rifle "h2a battle rifle"
+set english battle_rifle_v7 "battle rifle h2a"
+---set english excavator_v1 "mauler acc"
+---set english excavator_v2 "mauler rof"
+---set english magnum_v1 "magnum rof"
+---set english plasma_pistol_v1 "plasma pistol rof"
+---set english plasma_pistol_v2 "plasma pistol dmg"
+---set english assault_rifle_v1 "assault rifle mag"
+---set english assault_rifle_v4 "assault rifle rng"
+---set english smg_v3_type_1 "smg rng"
+---set english smg_v5 "smg mag"
+---set english plasma_rifle_v1 "plasma rifle dmg"
+---set english plasma_rifle_v2 "plasma rifle rof"
+---set english plasma_rifle_v3 "plasma rifle acc"
+---set english plasma_rifle_v4 "plasma rifle mag"
+---set english plasma_rifle_v5 "plasma rifle rng"
 exitto tags.dat
---- forge strings end---
---- hud strings ---
+echo		---forge_strings_end---
+echo		---hud_strings---
 stringid add nr_picked_up
 stringid add pelican_flip
 stringid add pelican_enter_driver
 stringid add cf_picked_up
 edit 12c2
 set english nr_picked_up "Picked up a Needle Rifle"
-set english pelican_flip "Hold <Action Button> to flip Pelican (you had a really bad pilot, didnt you?)"
+set english pelican_flip "Hold <Action Button> to flip Pelican (You had a really bad pilot, didn't you?)"
 set english pelican_enter_driver "Hold <Action Button> to pilot Pelican"
 set english cf_picked_up "Picked up a Confetti Gun"
 exitto tags.dat
---- hud strings end ---
---- strings ---
+echo		---hud_strings_end---
+echo		---strings_end---
 
 
----forge menu---
+echo		---forge_menu---
 edit 54e9 
 addto sandboxweapons
 edit sandboxweapons[*]
@@ -33,13 +61,13 @@ exit
 addto sandboxweapons
 edit sandboxweapons[*]
 setfield object 5726
-setfield name h2a_battle_rifle
+setfield name battle_rifle_v7
 setfield maxallowed 255
 savechanges
 exitto tags.dat
 
 
----pelican---
+echo		---pelican---
 duplicate 0
 import 5828 vehicles\pelican\pelican.vehi
 import 2849 vehicles\pelican\pelican.jmad
@@ -65,15 +93,15 @@ dep add 5828 2847
 
 
 
---- forge strings ---
+echo		---forge_strings---
 edit 1221
 set english pelican pelican
 exit
---- forge strings end ---
+echo		---forge_strings_end---
 
 
 
----vehi---
+echo		---vehi---
 edit 5828
 edit seats[0]
 edit cameratracks[0]
@@ -96,9 +124,9 @@ setfield importname thrust
 setfield turnoffwith driver_seat_power
 savechanges
 exitto tags.dat
---- vehi end--- 
+echo		---vehi_end--- 
 
----mode---
+echo		---mode---
 edit 2847
 edit nodes[7]
 setfield defaultscale 0
@@ -107,9 +135,9 @@ edit nodes[8]
 setfield defaultscale 0
 savechanges
 exitto tags.dat
----mode end---
+echo		---mode_end---
 
----scnrs
+echo		---scnrs---
 edit 54e9
 addto sandboxvehicles
 edit sandboxvehicles[*]
@@ -166,27 +194,23 @@ setfield name pelican
 setfield maxallowed 255
 savechanges
 exitto tags.dat
---- scnrs end---
----pelican end--- 
+echo		---scnrs_end---
+echo		---pelican_end--- 
 
 
-
----needle rifle---
---- needle rifle chad---
+echo		---needle_rifle---
+echo		---needle_rifle_chad---
 duplicate 20E0
 import 5829 weapons\needle_rifle\needle_rifle.chad
 dep add 579C 5829
 setfield pickedupmessage nr_picked_up
---- needle rifle chdt---
+		---needle_rifle_chad_end---
+		---needle_rifle_chdt---
 duplicate 1DBA
 import 582A weapons\needle_rifle\needle_rifle.chdt
 dep add 579C 582A
---- needle rifle weap---
-edit 579C
-setfield HudInterface 582A
-savechanges
-exitto tags.dat
---- needle rifle bitm---
+echo		---needle_rifle_chdt_end---		
+echo		---needle_rifle_bitm---
 importbitmap textures\carbine_scope.dds
 importbitmap textures\nr_focus.dds
 importbitmap textures\nr_schematic.dds
@@ -199,9 +223,9 @@ dep add 579C 582C
 dep add 579C 582D
 dep add 579C 582E
 dep add 579C 582F
-dep add 597C 5830
-dep add 597C 5831
----needle rifle hud---
+dep add 579C 5830
+dep add 579C 5831
+echo		---needle_rifle_hud---
 edit 582A
 edit HudWidgets[2]
 setfield BitmapWidgets[4].AnimationData[0].Animation2 5829
@@ -217,19 +241,40 @@ exit
 edit HudWidgets[7]
 setfield BitmapWidgets[0].Bitmap 582C
 exit
-edit HudWidgets[7]
-setfield BitmapWidgets[0].Bitmap 582C
+edit HudWidgets[4]
+setfield BitmapWidgets[0].Bitmap 582D
+exit
 edit HudWidgets[5]
-exit
 setfield BitmapWidgets[0].Bitmap 582D
+exit
 edit HudWidgets[6]
-exit
 setfield BitmapWidgets[0].Bitmap 582D
+exit
 savechanges
 exitto tags.dat
+echo		---needle_rifle hud_end---
+echo		---needle_rifle_weap---
+edit 579C
+setfield HudInterface 582A
+setfield pickedupmessage nr_picked_up
+edit Barrels[0]
+setfield decelerationtime2 0.3
+setfield erroranglemin2 0.15
+setfield erroranglemax2 2.5
+setfield reloadpenalty 1.5
+setfield switchpenalty 0.5
+setfield unknown6 1148846080
+setfield unknown7 1148846080
+setfield firingeffectdecelerationtime 1
+setfield unknown8 1148846080
+setfield rateoffireaccelerationtime 1000
+setfield rateoffiredecelerationtime 1000
+setfield unknown9 1148846080
+setfield bloomrateofdecay 1.6
 savechanges
 exitto tags.dat
---- needle rifle jmad---
+echo		---needle_rifle_weap_end---
+echo		---needle_rifle_jmad---
 edit 5822
 edit animations[8]
 addto frameevents
@@ -264,7 +309,7 @@ setfield type transitiona
 setfield frame 23
 savechanges
 exitto tags.dat
----elite---
+echo		---elite---
 edit 5823
 edit animations[8]
 addto frameevents
@@ -299,8 +344,8 @@ setfield type transitiona
 setfield frame 23
 savechanges
 exitto tags.dat
----jmads end---
---- needle rifle end ---
+echo		---needle_rifle_jmad_end---
+echo		---needle_rifle_end ---
 
 exitto tags.dat
 dumplog expansion
